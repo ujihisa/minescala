@@ -7,6 +7,7 @@ import org.bukkit.event.player.PlayerLoginEvent
 class Minescala extends JavaPlugin with Listener {
 	override def onEnable {
 		println("Scala! Hello!!")
+		getServer().getPluginManager().registerEvents(this, this);
 	}
 	
 	@EventHandler
