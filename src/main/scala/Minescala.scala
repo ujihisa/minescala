@@ -9,7 +9,8 @@ class Minescala extends JavaPlugin with Listener {
 		println("Scala! Hello!!")
 	}
 	
-    @EventHandler def onPlayerLogin(event: PlayerLoginEvent) {
+	@EventHandler
+	def onPlayerLogin(event: PlayerLoginEvent) {
 		println("You logged in!")
 		println(event)
 	}
